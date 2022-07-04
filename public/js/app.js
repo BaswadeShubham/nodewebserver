@@ -15,7 +15,7 @@ weather.addEventListener("submit", (event) => {
   event.preventDefault();
   console.log("Hello world");
   console.log(search.value);
-  fetch(`http://localhost:3000/weather?address=${search.value}`).then(function (
+  fetch(`/weather?address=${search.value}`).then(function (
     response
   ) {
     console.log(response);
